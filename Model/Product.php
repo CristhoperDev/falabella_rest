@@ -28,7 +28,7 @@ class Product {
   public function getAllProducts() {
     $list = [];
     try {
-      $sql = 'SELECT * FROM products p INNER JOIN categories c ON c.idCat = p.idCat INNER JOIN marcas m ON m.idMarca = p.idMarca';
+      $sql = 'SELECT * FROM products p JOIN categories c ON c.idCat = p.idCat JOIN marcas m ON m.idMarca = p.idMarca';
       $stmt = $this->cn->prepare($sql);
       $stmt->execute();
       $rs = $stmt->get_result();

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc70517a-a2fe-4924-8542-227de4b3ab0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Controller/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/SalesDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/SalesDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/Product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="179">
+              <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -61,16 +60,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/SalesDetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="124">
+              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/ApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="1081">
               <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
             </state>
           </provider>
@@ -118,10 +117,10 @@
         <option value="$PROJECT_DIR$/Model/Brand.php" />
         <option value="$PROJECT_DIR$/Controller/BrandController.php" />
         <option value="$PROJECT_DIR$/Controller/ProductController.php" />
-        <option value="$PROJECT_DIR$/Model/Product.php" />
         <option value="$PROJECT_DIR$/Model/DBConnection.php" />
         <option value="$PROJECT_DIR$/Model/SalesDetail.php" />
         <option value="$PROJECT_DIR$/Controller/ApiController.php" />
+        <option value="$PROJECT_DIR$/Model/Product.php" />
       </list>
     </option>
   </component>
@@ -186,12 +185,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554532314543</updated>
-      <workItem from="1554532322435" duration="22908000" />
+      <workItem from="1554532322435" duration="23100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22908000" />
+    <option name="totallyTimeSpent" value="23100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -278,24 +277,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Product.php">
+    <entry file="file://$PROJECT_DIR$/Controller/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="1081">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/SalesDetail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="124">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/ApiController.php">
+    <entry file="file://$PROJECT_DIR$/Model/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        <state relative-caret-position="179">
+          <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
         </state>
       </provider>
     </entry>
