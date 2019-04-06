@@ -23,7 +23,7 @@ switch ($op) {
     $message['status'] = 0;
     $objSalesDetail = new SalesDetail();
     if (isset($data)) {
-      $barCode = filter_var($data->barCode, FILTER_SANITIZE_STRING);
+      $barCode = filter_var($data->barCode, FILTER_SANITIZE_NUMBER_INT);
       $status = filter_var($data->status, FILTER_SANITIZE_NUMBER_INT);
       $objSalesDetail->set('codBarras', $barCode);
       $objSalesDetail->set('estado', $status);
