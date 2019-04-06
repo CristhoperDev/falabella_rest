@@ -3,6 +3,9 @@
 require_once 'DBConnection.php';
 
 class SalesDetail {
+  private $codDetailSales;
+  private $codBarras;
+  private $estado;
   private $cn;
   private $stmt;
 
@@ -18,19 +21,19 @@ class SalesDetail {
     return $this->$attribute;
   }
 
-  public function getAllSalesDetail() {
-    $list = [];
+  public function insert() {
+    $i = 0;
     try {
-      $sql = 'SELECT * FROM detailsales';
-      $this->stmt = $this->cn->prepare($sql);
-      $this->stmt->execute();
-      while ($row = $this->stmt->fetchAll(PDO::FETCH_ASSOC)) {
-        $list = $row;
-      }
+      $sql = 'INSERT INTO detailSales(codBarras, estado) VALUES (?, ?)';
+      $stmt = $this->cn->prepare($sql);
+      $stmt->bind_param('ii', $this->codBarras, $this->estado);
+      $i = $stmt->execute();
+      $stmt->close();
+      $this->cn->close();
     } catch (Exception $e) {
       $e->getMessage();
     }
-    return $list;
+    return $i;
   }
 
   public function closeConnection() {
