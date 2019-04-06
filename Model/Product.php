@@ -33,7 +33,7 @@ class Product {
       $stmt->execute();
       $rs = $stmt->get_result();
       while ($row = $rs->fetch_assoc()) {
-        $list = $row;
+        $list[] = $row;
       }
       $rs->close();
       $stmt->close();
