@@ -38,6 +38,13 @@ switch ($op) {
     break;
   }
   case 3: {
-
+    $list = [];
+    $objSalesDetail = new SalesDetail();
+    if (isset($data)) {
+      $status = filter_var($data->status, FILTER_SANITIZE_NUMBER_INT);
+      $objSalesDetail->set('estado', $status);
+      $list = $objSalesDetail->listByStatus();
+    }
+    echo json_encode($list);
   }
 }

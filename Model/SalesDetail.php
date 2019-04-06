@@ -7,7 +7,6 @@ class SalesDetail {
   private $codBarras;
   private $estado;
   private $cn;
-  private $stmt;
 
   public function __construct() {
     $this->cn = new DBConnection();
@@ -19,6 +18,27 @@ class SalesDetail {
 
   public function get($attribute) {
     return $this->$attribute;
+  }
+
+  public function listByStatus()
+  {
+    $list = [];
+    try {
+      $sql = 'SELECT * FROM detailSales s JOIN products p ON s.codBarras = p.codBarras WHERE s.estado = ?';
+      $stmt = $this->cn->prepare($sql);
+      $stmt->bind_param('i', $this->estado);
+      $stmt->execute();
+      $rs = $stmt->get_result();
+      while ($row = $rs->fetch_assoc()) {
+        $list[] = $row;
+      }
+      $rs->close();
+      $stmt->close();
+      $this->cn->close();
+    } catch (Exception $e) {
+      $e->getMessage();
+    }
+    return $list;
   }
 
   public function insert() {
@@ -36,8 +56,4 @@ class SalesDetail {
     return $i;
   }
 
-  public function closeConnection() {
-    $this->stmt = null;
-    $this->cn = null;
-  }
 }
