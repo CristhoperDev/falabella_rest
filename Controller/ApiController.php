@@ -47,4 +47,18 @@ switch ($op) {
     }
     echo json_encode($list);
   }
+  case 4: {
+    $list = [];
+    $objSalesDetail = new SalesDetail();
+    if (isset($data)) {
+      $status = filter_var($data->status, FILTER_SANITIZE_NUMBER_INT);
+      $i = $objSalesDetail->delete();
+    }
+    if ($i == 1) {
+      $message['status'] = 1;
+    }else {
+      $message['status'] = 0;
+    }
+    echo json_encode($list);
+  }
 }

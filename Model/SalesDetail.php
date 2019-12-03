@@ -56,4 +56,18 @@ class SalesDetail {
     return $i;
   }
 
+  public function delete() {
+    $i = 0;
+    try {
+      $sql = 'DELETE FROM detailSales';
+      $stmt = $this->cn->prepare($sql);
+      $i = $stmt->execute();
+      $stmt->close();
+      $this->cn->close();
+    } catch (Exception $e) {
+      $e->getMessage();
+    }
+    return $i;
+  }
+
 }
