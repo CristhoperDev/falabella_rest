@@ -50,7 +50,10 @@ switch ($op) {
   case 4: {
     $list = [];
     $objSalesDetail = new SalesDetail();
-    $i = $objSalesDetail->delete();
+    if (isset($data)) {
+      $status = filter_var($data->status, FILTER_SANITIZE_NUMBER_INT);
+      $i = $objSalesDetail->delete();
+    }
     if ($i == 1) {
       $message['status'] = 1;
     }else {
