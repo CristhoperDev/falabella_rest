@@ -1,5 +1,4 @@
 <?php
-
 // required headers
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
@@ -46,14 +45,12 @@ switch ($op) {
       $list = $objSalesDetail->listByStatus();
     }
     echo json_encode($list);
+  break;
   }
   case 4: {
     $list = [];
     $objSalesDetail = new SalesDetail();
-    if (isset($data)) {
-      $status = filter_var($data->status, FILTER_SANITIZE_NUMBER_INT);
       $i = $objSalesDetail->delete();
-    }
     if ($i == 1) {
       $message['status'] = 1;
     }else {

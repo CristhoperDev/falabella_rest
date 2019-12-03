@@ -5,7 +5,7 @@ class DBConnection extends mysqli {
     private $host = 'localhost';
     private $user = 'root';
     private $password = 'Gi@mpieer24-pe';
-    private $database = 'db_hackathon_falabella';
+    private $database = 'db_hack_falabella';
 
     /* Construction to connect with the database*/
   public function __construct() {
